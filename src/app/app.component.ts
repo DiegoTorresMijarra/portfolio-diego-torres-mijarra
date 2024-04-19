@@ -1,18 +1,14 @@
-import {AfterContentInit, Component, OnInit, Output} from '@angular/core';
+import {AfterContentInit, Component, Output} from '@angular/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
-export class AppComponent implements AfterContentInit , OnInit{
+export class AppComponent implements AfterContentInit {
 
   title = 'Portafolio';
   @Output() public loaded: boolean = false;
-
-  ngOnInit(): void {
-    // addIcons({contrast, contrastOutline, schoolOutline, copyOutline,
-    //   sendOutline, mailOutline, logoGithub, arrowRedoOutline, logoLinkedin})
-  }
 
   ngAfterContentInit(): void {
     //this.delay(2000).then(r => this.loaded = true)
