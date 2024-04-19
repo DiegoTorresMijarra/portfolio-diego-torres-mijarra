@@ -1,0 +1,19 @@
+ion-avatar {
+  padding-left: 2px;
+}
+ion-col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+}
+@media (max-width: 768px){
+  ion-col{
+    border-top: 2px solid var(--ion-color-step-600);
+  }
+  ion-col:first-child {
+    border: none;
+  }
+}

@@ -1,0 +1,53 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Leyenda:</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list>
+      <!-- Sobre mí -->
+      <ion-item button detail="true"  href="#sobreMi" >
+        <ion-label>Sobre mí</ion-label>
+      </ion-item>
+
+      <!-- Tecnologías -->
+      <ion-item button detail="true" href="#tecnologias">
+        <ion-label>Tecnologías</ion-label>
+      </ion-item>
+
+      <!-- Proyectos -->
+      <ion-item button detail="true" href="#proyectos">
+        <ion-label>Proyectos</ion-label>
+      </ion-item>
+
+      <!-- Experiencia -->
+      <ion-item button detail="true" href="#experiencia">
+        <ion-label>Experiencia</ion-label>
+      </ion-item>
+
+      <!-- Formación -->
+      <ion-item button detail="true" href="#formacion">
+        <ion-label>Formación</ion-label>
+      </ion-item>
+
+      <!-- Más sobre mí -->
+      <ion-item button detail="true" href="#masSobreMi" style="display: none">
+        <ion-label>Más sobre mí</ion-label>
+      </ion-item>
+
+      <!-- Contacto -->
+      <ion-item button detail="true" href="#contacto">
+        <ion-label>Contacto</ion-label>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-content class="ion-page ion-padding" id="main-content">
+  <app-content-header></app-content-header>
+  <hr style="border-top: 3px solid black" class="ion-margin-bottom">
+  <app-content></app-content>
+</ion-content>

@@ -1,0 +1,246 @@
+<!--Tecnologias-->
+<ion-list class="" id="tecnologias">
+
+  <ion-list-header class="ion-padding-horizontal">
+    <h2>Tecnologias: <span class="nota">Mis tecnologías preferidas 💻</span></h2>
+  </ion-list-header>
+
+  <ion-item-group class="muestrario">
+    <ion-item class="ion-align-items-center">
+      <app-tech-badge></app-tech-badge>
+    </ion-item>
+  </ion-item-group>
+</ion-list>
+
+<!--Proyectos-->
+
+<ion-list class="ion-margin-top" id="proyectos">
+
+  <ion-list-header class="ion-padding-horizontal">
+    <h2>Proyectos: <span class="nota">Trabajos principales que he desarrollado</span></h2>
+  </ion-list-header>
+
+  <ion-item-group class="muestrario">
+    <ion-item class="muestra ion-align-items-center" lines="full" button detail="false" id="open-modal">
+      <ion-label class="descripcion">
+        <h2 class="titulo">MacJava-Rest: <span class="nota">3 API Rest</span></h2>
+
+        <p class="ion-text-justify">Este proyecto abarca el desarrollo de una API Rest para la gestion de un restaurante. Esta desarrollado en 3 lenguajes de programacion y frameworks distintos: Spring Boot y Java, Nest y TypeScript y por último en Laravel y PHP.</p>
+      </ion-label>
+
+      <ion-thumbnail slot="end">
+        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
+      </ion-thumbnail>
+
+      <ion-modal #modal trigger="open-modal" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>Modal</ion-title>
+              <ion-buttons slot="end">
+                <ion-button (click)="modal.dismiss()">Close</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
+              reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
+              dicta.
+            </p>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+    </ion-item>
+    <ion-item class="muestra ion-align-items-center" lines="full">
+      <ion-label class="descripcion">
+        <h2 class="titulo">MacJava-Rest: <span class="nota">3 API Rest</span></h2>
+
+        <p class="ion-text-justify">Este proyecto abarca el desarrollo de una API Rest para la gestion de un restaurante. Esta desarrollado en 3 lenguajes de programacion y frameworks distintos: Spring Boot y Java, Nest y TypeScript y por último en Laravel y PHP.</p>
+      </ion-label>
+
+      <ion-thumbnail slot="end">
+        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item class="muestra ion-align-items-center" lines="full" >
+      <ion-label class="descripcion">
+        <h2 class="titulo">MacJava-Rest: <span class="nota">3 API Rest</span></h2>
+
+        <p class="ion-text-justify">Este proyecto abarca el desarrollo de una API Rest para la gestion de un restaurante. Esta desarrollado en 3 lenguajes de programacion y frameworks distintos: Spring Boot y Java, Nest y TypeScript y por último en Laravel y PHP.</p>
+      </ion-label>
+
+      <ion-thumbnail slot="end">
+        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
+      </ion-thumbnail>
+    </ion-item>
+  </ion-item-group>
+</ion-list>
+
+<!--Experiencia-->
+<ion-list class="ion-margin-top" id="experiencia">
+
+  <ion-list-header class="ion-padding-horizontal">
+    <h2>Experiencia: <span class="nota">Mi carrera profesional como desarrollador web esta comenzando 🚀. <br>
+      Pero esta es mi experiencia más relevante, para más echa un vistazo a mi CV.</span></h2>
+  </ion-list-header>
+  <ion-item-group class="muestrario">
+    <ion-item class="muestra ion-align-items-center">
+      <ion-label class="descripcion">
+        <h2 class="titulo">Estudiante en prácticas en Getronics: <span class="nota">marzo 2024  -Actualidad.</span></h2>
+        <p class="ion-text-justify"> Me encuentro realizando mis prácticas FCT en Getronics.</p>
+        <p class="tags">Aptitudes: Desarrollo BackEnd, Java, SpringBoot, Angular.</p>
+      </ion-label>
+      <ion-thumbnail slot="end">
+        <img alt="logoMSF" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
+      </ion-thumbnail>
+    </ion-item>
+
+    <ion-item class="muestra ion-align-items-center">
+      <ion-label class="descripcion">
+        <h2 class="titulo">Recaudador de fondos para varias ONGs: <span class="nota">2019 - 2022.</span></h2>
+        <p class="ion-text-justify">En este periodo trabajé como captador de socios para Distintas ONG, entre ellas Médicos Sin Fronteras, Cruz Roja y la Asociación Española Contra el Cancer.</p>
+        <p class="tags">Aptitudes: Trabajo por Objetivos, Proactividad, Comunicación Cara a Cara, Gestión de Presión</p>
+      </ion-label>
+      <ion-thumbnail slot="end">
+        <img alt="logoCF" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
+      </ion-thumbnail>
+    </ion-item>
+
+  </ion-item-group>
+</ion-list>
+
+<!--Formación-->
+<ion-list class="ion-margin-top" id="formacion">
+
+  <ion-list-header class="ion-padding-horizontal">
+    <h2>Formación: <span class="nota">Mi formación académica y certificaciones obtenidas</span></h2>
+  </ion-list-header>
+
+  <ion-item-group class="muestrario">
+
+    <ion-item class="muestra ion-align-items-center" lines="full" >
+      <ion-label class="descripcion">
+        <h2 class="titulo">Técnico Superior en Desarrollo de Aplicaciones Web <span class="nota"> 2024 </span></h2>
+
+        <p class="ion-text-justify">Título académico de grado superior en la modalidad de Desarrollo de Aplicaciones Web. Expedido en 2024 en Leganés por el IES Luis Vives.</p>
+      </ion-label>
+
+      <ion-icon name="school-outline"></ion-icon>
+    </ion-item>
+
+    <ion-item class="muestra ion-align-items-center" lines="full" >
+      <ion-label class="descripcion">
+        <h2 class="titulo">Título de Bachillerato <span class="nota"> 2018 </span></h2>
+
+        <p class="ion-text-justify">Título académico de Bachillerato en la modalidad de Ciencias Tecnológicas. Expedido en 2018 en Leganés por el IES María Zambrano.</p>
+      </ion-label>
+
+      <ion-icon name="school-outline"></ion-icon>
+    </ion-item>
+
+    <ion-item class="muestra ion-align-items-center" lines="full" >
+      <ion-label class="descripcion">
+        <h2 class="titulo">Estudiante de Doble Grado en Ciencias Politícas y Sociología <span class="nota"> 2019-2021</span></h2>
+
+        <p class="ion-text-justify">Universidad Carlos III de Madrid. A finalizar, 180 créditos completados.</p>
+      </ion-label>
+      <ion-icon name="school-outline"></ion-icon>
+    </ion-item>
+  </ion-item-group>
+</ion-list>
+
+<!-- Mas sobre mí-->
+<ion-list class="ion-margin-top" id="masSobreMi" style="display: none">
+
+  <ion-list-header class="ion-padding-horizontal">
+    <h2>Más Sobre mí: <span class="nota">Soft Skills</span></h2>
+  </ion-list-header>
+  <ion-item-group class="muestrario">
+    <ion-item class="muestra ion-align-items-center" lines="full" >
+      <ion-label class="descripcion">
+        <h2 class="titulo">MacJava-Rest: <span class="nota">3 API Rest</span></h2>
+
+        <p class="ion-text-justify">Este proyecto abarca el desarrollo de una API Rest para la gestion de un restaurante. Esta desarrollado en 3 lenguajes de programacion y frameworks distintos: Spring Boot y Java, Nest y TypeScript y por último en Laravel y PHP.</p>
+      </ion-label>
+
+      <ion-thumbnail slot="end">
+        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
+      </ion-thumbnail>
+    </ion-item>
+  </ion-item-group>
+</ion-list>
+
+<!--Contacto-->
+<ion-list class="ion-margin-top" id="contacto">
+
+  <ion-list-header class="ion-padding-horizontal">
+    <h2>Contacto: <span class="nota">Si quieres contactar conmigo</span></h2>
+  </ion-list-header>
+
+  <ion-item-group class="contactItemGroup">
+
+    <ion-item class="contactItem">
+      <ion-input id="gmail" value="diegotorresmijarra@gmail.com" [readonly]="true">
+        <div class="ion-padding contactLabel" slot="label">
+          <ion-icon class="ion-padding-end" name="mail-outline"></ion-icon>
+          Email:
+        </div>
+      </ion-input>
+      <ion-button id="copyButtonEmail" class="ion-padding-start" size="middle" (click)="writeToClipboard('diegotorresmijarra@gmail.com')">
+
+        <ion-icon slot="icon-only" name="copy-outline"></ion-icon>
+        <ion-popover trigger="copyButtonEmail" side="right" alignment="end" [showBackdrop]="false">
+          <ng-template>
+            <ion-item class="copied">Copiado!</ion-item>
+          </ng-template>
+        </ion-popover>
+      </ion-button>
+      <ion-button size="middle" href="mailto:diegotorresmijarra@gmail.com">
+        <ion-icon slot="icon-only" name="send-outline" ></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item class="contactItem ion-margin-start">
+      <ion-input id="gitHub" value="DiegoTorresMijarra" [readonly]="true">
+        <div class="ion-padding contactLabel" slot="label">
+          <ion-icon class="ion-padding-end" name="logo-github"></ion-icon>
+          GitHub:
+        </div>
+      </ion-input>
+      <ion-button id="copyButtonGH" class="ion-padding-start" size="middle" (click)="writeToClipboard('DiegoTorresMijarra')">
+
+        <ion-icon slot="icon-only" name="copy-outline"></ion-icon>
+        <ion-popover trigger="copyButtonGH" side="right" alignment="end" [showBackdrop]="false">
+          <ng-template>
+            <ion-item class="copied">Copiado!</ion-item>
+          </ng-template>
+        </ion-popover>
+      </ion-button>
+      <ion-button size="middle" href="https://github.com/DiegoTorresMijarra">
+        <ion-icon slot="icon-only" name="arrow-redo-outline" ></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item class="contactItem">
+      <ion-input id="LinkedIn" value="Diego Torres Mijarra" [readonly]="true">
+        <div class="ion-padding contactLabel" slot="label">
+          <ion-icon class="ion-padding-end" name="logo-linkedin"></ion-icon>
+          LinkedIn:
+        </div>
+      </ion-input>
+      <ion-button id="copyButtonLk" class="ion-padding-start" size="middle" (click)="writeToClipboard('Diego Torres Mijarra')">
+
+        <ion-icon slot="icon-only" name="copy-outline"></ion-icon>
+        <ion-popover trigger="copyButtonLk" side="right" alignment="end" [showBackdrop]="false">
+          <ng-template>
+            <ion-item class="copied">Copiado!</ion-item>
+          </ng-template>
+        </ion-popover>
+      </ion-button>
+      <ion-button size="middle" href="https://www.linkedin.com/in/diego-torres-mijarra/">
+        <ion-icon slot="icon-only" name="arrow-redo-outline" ></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-item-group>
+</ion-list>
