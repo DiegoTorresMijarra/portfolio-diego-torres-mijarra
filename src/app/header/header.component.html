@@ -1,0 +1,26 @@
+<ion-toolbar class="ion-tool ion-padding-end ">
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-align-items-end icon-col ion-justify-content-center">
+        <ion-img
+          src="https://ionic-docs-demo-v7.vercel.app/assets/madison.jpg"
+          alt="The Wisconsin State Capitol building in Madison, WI at night"
+        ></ion-img>
+      </ion-col>
+      <ion-col class="ion-align-items-center">
+        <h3 class="title">Diego Torres</h3>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button (click)="toggleDarkMode()" color="medium" slot="end">
+    <ion-icon id="iconDarkMode" slot="icon-only" name="contrast-outline" color="dark"></ion-icon>
+  </ion-button>
+
+  <ion-progress-bar type="indeterminate" *ngIf="!loaded"></ion-progress-bar>
+
+</ion-toolbar>
