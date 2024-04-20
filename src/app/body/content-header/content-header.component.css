@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  ion-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ion-card {
+    width: 100% !important;
+    margin: 5px !important;
+  }
+}
