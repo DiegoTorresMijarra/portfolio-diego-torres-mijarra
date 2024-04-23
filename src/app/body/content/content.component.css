@@ -89,6 +89,7 @@
 
   .titulo {
     padding-bottom: calc(var(--padding-bottom) * 1.2);
+    width: 100%;
   }
 
   .nota {

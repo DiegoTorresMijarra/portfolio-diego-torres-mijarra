@@ -1,3 +1,47 @@
-<p>
-  trabajos works!
-</p>
+<ion-item-group class="muestrario">
+
+  <ion-item *ngFor="let trabajo of trabajos" class="muestra ion-align-items-center" lines="full" button detail="false" id="{{'trabajo'+trabajo.id}}">
+
+    <ion-label class="descripcion">
+      <h2 class="titulo">{{trabajo.titulo}}: <span class="nota">{{trabajo.nota}}</span></h2>
+      <p class="ion-text-justify">
+        {{trabajo.resumen}} <br>
+      </p>
+      <p class="readMore">Seguir leyendo →</p>
+    </ion-label>
+
+    <ion-thumbnail slot="end">
+      <img alt="{{'trabajo'+trabajo.id}}" src="{{trabajo.logo}}"/>
+    </ion-thumbnail>
+
+    <ion-modal #modal trigger="{{'trabajo'+trabajo.id}}" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation">
+      <ng-template>
+        <ion-card>
+          <ion-card-title>
+            <ion-toolbar class="ion-padding">
+              <ion-title class="titulo">{{trabajo.titulo}}: <span class="nota">{{trabajo.nota}}</span></ion-title>
+              <ion-buttons slot="end">
+                <ion-button (click)="modal.dismiss()">Close</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-card-title>
+          <ion-card-content>
+            {{trabajo.descripcion}}
+          </ion-card-content>
+          <div class="container">
+            <ul class="slides">
+              <li *ngFor="let image, let i of trabajo.images" id="{{'trabajo'+trabajo.id+'Image'+i}}"><img src="{{image}}" alt="" />
+            </ul>
+
+            <ul class="thumbnails">
+              <li *ngFor="let image, let i of trabajo.images">
+                <a href="#{{'trabajo'+trabajo.id+'Image'+i}}"><img src="{{image}}" /></a>
+              </li>
+            </ul>
+          </div>
+        </ion-card>
+      </ng-template>
+    </ion-modal>
+  </ion-item>
+
+</ion-item-group>
