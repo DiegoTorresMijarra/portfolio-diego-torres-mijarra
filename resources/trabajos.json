@@ -1,0 +1,22 @@
+{
+  "trabajos": [
+    {
+      "id": 1,
+      "titulo": "MacJava-Rest",
+      "logo": "assets/images/trabajos/logoMacJava.png",
+      "nota": "3 API Rest",
+      "resumen": "Desarrollo de 3 API Rest independientes usando distintos frameworks",
+      "descripcion": "Este proyecto abarca el desarrollo de una API Rest para la gestion de un restaurante. Esta desarrollado en 3 lenguajes de programacion y frameworks distintos: Spring Boot y Java, Nest y TypeScript y por último en Laravel y PHP.",
+      "images": [
+        "assets/trabajos/MacJava1.PNG",
+        "assets/trabajos/MacJava2.PNG",
+        "assets/trabajos/MacJava3.PNG",
+        "assets/trabajos/MacJava5.PNG",
+        "assets/trabajos/MacJava6.PNG",
+        "assets/trabajos/MacJava7.png",
+        "assets/trabajos/MacJava8.PNG"
+      ],
+      "url": "https://github.com/DiegoTorresMijarra/MacJavaIndex"
+    }
+  ]
+}

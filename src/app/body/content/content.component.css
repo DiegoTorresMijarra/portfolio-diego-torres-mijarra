@@ -14,12 +14,12 @@
     align-items: center;
   }
 
-  ion-item{
+  .muestra::part(native){
     height: 100%;
+    display: flex;
   }
 
   ion-label {
-    min-height: 180px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -99,7 +99,12 @@
 
   .descripcion {
     padding-right: calc(var(--padding-end) + 5%);
-
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
   }
 
   .muestra {
@@ -113,6 +118,7 @@
     font-size: calc(80%);
     color: var(--ion-color-step-300);
     padding-top: var(--padding-top);
+    text-align: end;
   }
 
   .copied {
@@ -163,6 +169,7 @@
 
 @media (max-width: 1200px) {
   .muestra {
+    height: 100%;
     width: 45%;
   }
 
