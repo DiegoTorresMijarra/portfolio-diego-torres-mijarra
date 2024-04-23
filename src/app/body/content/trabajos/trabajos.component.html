@@ -17,7 +17,7 @@
     <ion-modal #modal trigger="{{'trabajo'+trabajo.id}}" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation">
       <ng-template>
         <ion-card>
-          <ion-card-title>
+          <ion-card-title class="ion-padding-top">
             <ion-toolbar>
               <ion-title class="titulo">{{trabajo.titulo}}: <span class="nota">{{trabajo.nota}}</span></ion-title>
               <ion-buttons slot="end">
@@ -27,7 +27,7 @@
           </ion-card-title>
           <ion-card-content>
             <ion-grid>
-              <ion-row>
+              <ion-row class="ion-padding-horizontal">
                 {{trabajo.descripcion}}
               </ion-row>
               <ion-row>
