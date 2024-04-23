@@ -56,6 +56,12 @@
     width: 20%;
     height: 100%;
     margin: 0;
+    display: flex;
+  }
+
+  ion-thumbnail img{
+    align-self: center;
+    max-height: fit-content(80%);
   }
 
   ion-modal::part(content) {

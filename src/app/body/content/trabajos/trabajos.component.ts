@@ -3,6 +3,7 @@ import {AnimationController, IonicModule} from "@ionic/angular";
 import {HttpClient} from "@angular/common/http";
 import {TrabajoModel, TrabajosService} from "./trabajos.service";
 import {JsonPipe, NgForOf} from "@angular/common";
+import {CdkFixedSizeVirtualScroll, CdkVirtualScrollViewport} from "@angular/cdk/scrolling";
 
 @Component({
   selector: 'app-trabajos',
@@ -12,7 +13,9 @@ import {JsonPipe, NgForOf} from "@angular/common";
   imports: [
     IonicModule,
     NgForOf,
-    JsonPipe
+    JsonPipe,
+    CdkVirtualScrollViewport,
+    CdkFixedSizeVirtualScroll
   ]
 })
 export class TrabajosComponent implements OnInit {
