@@ -31,17 +31,22 @@
                 {{trabajo.descripcion}}
               </ion-row>
               <ion-row>
-                <ion-col size="10">
-                  <ul class="slides">
-                    <li *ngFor="let image, let i of trabajo.images" id="{{'trabajo'+trabajo.id+'Image'+i}}"><img src="{{image}}" alt="" />
-                  </ul>
-                </ion-col>
-
-                <ion-col size="2">
+                <ion-col size-md="2" size-xs="12" >
                   <ul class="selector">
                     <li *ngFor="let image, let i of trabajo.images">
                       <a href="#{{'trabajo'+trabajo.id+'Image'+i}}"><img src="{{image}}" /></a>
                     </li>
+                  </ul>
+                </ion-col>
+
+                <ion-col size-md="10" size-xs="12">
+                  <span class="galleryHelp">
+                    <ion-icon name="arrow-back-circle-outline" size="large"></ion-icon>
+                    Selecciona una imagen de la galería
+                    <ion-icon name="arrow-back-circle-outline" size="large"></ion-icon>
+                  </span>
+                  <ul class="gallery">
+                    <li *ngFor="let image, let i of trabajo.images" id="{{'trabajo'+trabajo.id+'Image'+i}}"><img src="{{image}}" alt="" />
                   </ul>
                 </ion-col>
               </ion-row>
