@@ -83,6 +83,19 @@
     padding: 10px;
   }
 
+  ion-segment-button::part(native) {
+    height: 150px;
+    padding: 0;
+    margin-inline-end: 10px;
+
+    --indicator-box-shadow: -5px -5px 10px 0px red, 5px 5px 10px 0px red;
+  }
+
+  ion-segment-button ion-thumbnail{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+  }
 
   /*Clases for elements*/
 
@@ -183,15 +196,58 @@
 
 }
 
-@media (max-width: 1200px) {
-  .muestra {
-    height: 100%;
-    width: 45%;
+/*large*/
+@media (min-width: 1200px) {
+
+  ion-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+
+    max-height: 250px; /*todo*/
+
+    overflow-y: scroll ;
+    overflow-x: hidden ;
+
+    direction: rtl;
   }
+
+  ion-segment::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ion-segment::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 20px;
+  }
+
+  ion-segment::-webkit-scrollbar-track {
+    background: #666;
+  }
+
+  ion-segment-button {
+    margin-bottom: 10px;
+  }
+}
+
+
+/*middle*/
+@media (max-width: 1199px) {
 
   ion-modal::part(content) {
     width: 80%;
     height: 80%;
+  }
+
+  .galleryHelp ion-icon {
+    transform: rotate(90deg);
+  }
+
+  .muestra {
+    height: 100%;
+    width: 45%;
   }
 
   .contactItem {
@@ -209,6 +265,7 @@
 
 }
 
+/*mid*/
 @media (max-width: 600px) {
 
   ion-modal::part(content) {
@@ -253,6 +310,8 @@
     margin-right: 16px;
   }
 }
+
+
 
 ion-grid {
   max-height: 500px;

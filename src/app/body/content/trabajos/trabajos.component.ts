@@ -21,6 +21,7 @@ import {CdkFixedSizeVirtualScroll, CdkVirtualScrollViewport} from "@angular/cdk/
 export class TrabajosComponent implements OnInit {
 
   trabajos: TrabajoModel[] = []
+  private segment: string ='';
 
   constructor(private animationCtrl: AnimationController, private trabajoService: TrabajosService) {
   }
@@ -30,6 +31,10 @@ export class TrabajosComponent implements OnInit {
         this.trabajos = trabajos;
       }
     );
+  }
+
+  segmentChanged(ev: any) {
+    this.segment = ev.detail.value;
   }
 
   enterAnimation = (baseEl: HTMLElement) => {
