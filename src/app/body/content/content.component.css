@@ -2,7 +2,7 @@
 
 @media (min-width: 0px) {
   /*ion-components*/
-  *{
+  * {
     border-radius: 5px;
   }
 
@@ -14,9 +14,11 @@
     align-items: center;
   }
 
-  .muestra::part(native){
+  .muestra::part(native) {
     height: 100%;
     display: flex;
+
+    max-height: 150px;
   }
 
   ion-label {
@@ -45,23 +47,22 @@
     border-style: solid;
     border-bottom-width: 3px;
     border-image: linear-gradient(to right,
-      /*calc(var(--ion-border-color) - var(--ion-color-step-60)) 20%, todo*/
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.5) 40%,   /* Negro transparente al 20% */
-    rgba(0, 0, 0, 0) 80%)
-    1;
+      /*calc(var(--ion-border-color) - var(--ion-color-step-60)) 20%, todo*/ rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.5) 40%, /* Negro transparente al 20% */ rgba(0, 0, 0, 0) 80%) 1;
   }
 
   ion-thumbnail {
     width: 20%;
     height: 100%;
-    margin: 0;
-    display: flex;
+
+    overflow: hidden;
+    object-fit: cover;
   }
 
-  ion-thumbnail img{
-    align-self: center;
-    max-height: fit-content(80%);
+  ion-thumbnail::part(img) {
+    display: flex;
+    justify-content: center;
+    width: auto;
   }
 
   ion-modal::part(content) {
@@ -80,8 +81,6 @@
   }
 
   /*Clases for elements*/
-
-
   .badget {
     height: 2em;
     margin: 3px;
@@ -154,7 +153,7 @@
   }
 
   #gmail .contactLabel, ion-button {
-    --background: var(rgb(199,22,16));
+    --background: var(rgb(199, 22, 16));
   }
 
   .contactItem ion-button {
@@ -208,7 +207,6 @@
   }
 
   /*Clases for elements*/
-
   .muestra {
     width: 100%;
     margin: auto;
@@ -225,11 +223,11 @@
   }
 
 
-  .contactItem::part(native){
+  .contactItem::part(native) {
     width: 100%;
   }
 
-  #copyButtonEmail, #copyButtonGH , #copyButtonLk {
+  #copyButtonEmail, #copyButtonGH, #copyButtonLk {
     padding-inline-start: 0 !important;
   }
 

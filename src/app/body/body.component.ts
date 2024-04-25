@@ -1,7 +1,7 @@
-import {AfterViewInit, Component, ViewChild} from '@angular/core';
-import {IonContent, IonicModule} from "@ionic/angular";
-import {ContentHeaderComponent} from "./content-header/content-header.component";
-import {ContentComponent} from "./content/content.component";
+import { AfterViewInit, Component, ViewChild } from '@angular/core'
+import { IonContent, IonicModule } from '@ionic/angular'
+import { ContentHeaderComponent } from './content-header/content-header.component'
+import { ContentComponent } from './content/content.component'
 
 @Component({
   selector: 'app-body',
@@ -11,18 +11,17 @@ import {ContentComponent} from "./content/content.component";
     IonicModule,
     ContentComponent,
     ContentHeaderComponent,
-    ContentComponent
+    ContentComponent,
   ],
   templateUrl: './body.component.html',
-  styleUrl: './body.component.css'
+  styleUrl: './body.component.css',
 })
 export class BodyComponent {
-//  @ViewChild(AppComponent) body: IonContent;
+  //  @ViewChild(AppComponent) body: IonContent;
 
-  constructor() {
-  }
+  constructor() {}
 
-  scrollTo(){
-//    this.body?.scrollToTop().then(r => true);
+  scrollTo() {
+    //    this.body?.scrollToTop().then(r => true);
   }
 }
