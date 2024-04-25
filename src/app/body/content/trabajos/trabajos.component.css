@@ -56,17 +56,22 @@
     width: 20%;
     height: 100%;
     margin: 0;
-    display: flex;
   }
 
-  ion-thumbnail img{
-    align-self: center;
-    max-height: fit-content(80%);
+  ion-modal::part(content){
+    width: 80%;
+    height:80%;
+
+    min-width: max-content;
+    min-height: max-content;
   }
 
-  ion-modal::part(content) {
-    width: 50%;
-    height: 50%;
+
+  ion-modal::part(content) ion-content{
+    min-height: max-content;
+
+    width: 80%;
+    height:80%;
   }
 
   ion-popover::part(content) {
@@ -77,6 +82,32 @@
 
   ion-input {
     text-align: center;
+  }
+
+  ion-card {
+    --background: #000;
+    --color: #9efff0;
+    height: 100%;
+  }
+
+  ion-card-content {
+    text-align: justify;
+    padding: 10px;
+    height: 100%;
+  }
+
+  ion-segment-button::part(native) {
+    height: 150px;
+    padding: 0;
+    margin-inline-end: 10px;
+
+    --indicator-box-shadow: -5px -5px 10px 0px red, 5px 5px 10px 0px red;
+  }
+
+  ion-segment-button ion-thumbnail{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
   }
 
   /*Clases for elements*/
@@ -94,7 +125,6 @@
   }
 
   .titulo {
-    padding-bottom: calc(var(--padding-bottom) * 1.2);
     width: 100%;
   }
 
@@ -125,6 +155,11 @@
     font-size: calc(80%);
     color: var(--ion-color-step-300);
     padding-top: var(--padding-top);
+    text-align: end;
+  }
+
+  .readMore {
+    width: 100%;
     text-align: end;
   }
 
@@ -174,15 +209,70 @@
 
 }
 
-@media (max-width: 1200px) {
-  .muestra {
-    height: 100%;
-    width: 45%;
+/*large*/
+@media (min-width: 1200px) {
+
+  ion-segment {
+
+    position: sticky;
+    top: initial;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    height: 500px;
+
+    overflow-y: auto ;
+    overflow-x: hidden ;
+
+    direction: rtl;
+  }
+
+  ion-segment-button {
+    margin-bottom: 10px;
+    min-height: 100px;
+    min-width: 50px;
+  }
+
+  ion-segment::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ion-segment::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 20px;
+  }
+
+  ion-segment::-webkit-scrollbar-track {
+    background: #666;
+  }
+}
+
+
+/*middle*/
+@media (max-width: 1199px) {
+
+  ion-segment-button {
+    margin-top: 10px;
+    margin-inline-start: 5px;
+    min-height: 70px;
+    min-width: 70px;
   }
 
   ion-modal::part(content) {
     width: 80%;
     height: 80%;
+  }
+
+  .galleryHelp ion-icon {
+    transform: rotate(90deg);
+  }
+
+  .muestra {
+    height: 100%;
+    width: 45%;
   }
 
   .contactItem {
@@ -200,6 +290,7 @@
 
 }
 
+/*mid*/
 @media (max-width: 600px) {
 
   ion-modal::part(content) {
@@ -208,41 +299,88 @@
   }
 
   /*Clases for elements*/
-
   .muestra {
     width: 100%;
     margin: auto;
   }
 
-  .contactItem {
-    font-size: 0;
-    --inner-padding-end: 16px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin: 10px 0 0;
-    width: 100%;
-  }
-
-
-  .contactItem::part(native){
-    width: 100%;
-  }
-
-  #copyButtonEmail, #copyButtonGH , #copyButtonLk {
-    padding-inline-start: 0 !important;
-  }
-
-  .contactLabel {
-    min-width: 170px;
-    font-size: 24px;
-  }
-
-  .contactLabel ion-icon {
-    font-size: 24px;
+  .titulo {
     padding: 0;
-    margin-right: 16px;
+    width: auto;
+    text-align: start;
   }
+}
+
+.galleryRow {
+  height: 80%;
+}
+
+.gallery {
+  list-style-type: none;
+  display: flex;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+
+.gallery ion-img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.galleryHelp {
+  position: fixed;
+  top: auto;
+  bottom: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.galleryHelp ion-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ion-grid {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery li {
+  align-self: center;
+  height: 100%;
+  object-fit: cover;
+
+  -webkit-animation: slide 1s 1;
+}
 
 
+@keyframes slide {
+  0% {
+    display: inherit;
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes hidden {
+  0% {
+    z-index: 2;
+    opacity: 1;
+  }
+  99% {
+    z-index: 2;
+    opacity: 0;
+  }
+  100% {
+    z-index: 2;
+    display: none;
+  }
 }

@@ -20,69 +20,14 @@
     <h2>Proyectos: <span class="nota">Trabajos principales que he desarrollado</span></h2>
   </ion-list-header>
 
-  <ion-item-group class="muestrario">
-    <ion-item class="muestra ion-align-items-center" lines="full" button detail="false" id="open-modal">
-      <ion-label class="descripcion">
-        <h2 class="titulo">MacJava-Rest: <span class="nota">3 API Rest</span></h2>
-
-        <p class="ion-text-justify">Este proyecto abarca el desarrollo de una API Rest para la gestion de un restaurante. Esta desarrollado en 3 lenguajes de programacion y frameworks distintos: Spring Boot y Java, Nest y TypeScript y por último en Laravel y PHP.</p>
-      </ion-label>
-
-      <ion-thumbnail slot="end">
-        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
-      </ion-thumbnail>
-
-      <ion-modal #modal trigger="open-modal" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation">
-        <ng-template>
-          <ion-header>
-            <ion-toolbar>
-              <ion-title>Modal</ion-title>
-              <ion-buttons slot="end">
-                <ion-button (click)="modal.dismiss()">Close</ion-button>
-              </ion-buttons>
-            </ion-toolbar>
-          </ion-header>
-          <ion-content class="ion-padding">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-              reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-              dicta.
-            </p>
-          </ion-content>
-        </ng-template>
-      </ion-modal>
-    </ion-item>
-    <ion-item class="muestra ion-align-items-center" lines="full">
-      <ion-label class="descripcion">
-        <h2 class="titulo">MacJava-Rest: <span class="nota">3 API Rest</span></h2>
-
-        <p class="ion-text-justify">Este proyecto abarca el desarrollo de una API Rest para la gestion de un restaurante. Esta desarrollado en 3 lenguajes de programacion y frameworks distintos: Spring Boot y Java, Nest y TypeScript y por último en Laravel y PHP.</p>
-      </ion-label>
-
-      <ion-thumbnail slot="end">
-        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
-      </ion-thumbnail>
-    </ion-item>
-    <ion-item class="muestra ion-align-items-center" lines="full" >
-      <ion-label class="descripcion">
-        <h2 class="titulo">MacJava-Rest: <span class="nota">3 API Rest</span></h2>
-
-        <p class="ion-text-justify">Este proyecto abarca el desarrollo de una API Rest para la gestion de un restaurante. Esta desarrollado en 3 lenguajes de programacion y frameworks distintos: Spring Boot y Java, Nest y TypeScript y por último en Laravel y PHP.</p>
-      </ion-label>
-
-      <ion-thumbnail slot="end">
-        <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
-      </ion-thumbnail>
-    </ion-item>
-  </ion-item-group>
+  <app-trabajos></app-trabajos>
 </ion-list>
 
 <!--Experiencia-->
 <ion-list class="ion-margin-top" id="experiencia">
 
   <ion-list-header class="ion-padding-horizontal">
-    <h2>Experiencia: <span class="nota">Mi carrera profesional como desarrollador web esta comenzando 🚀. <br>
-      Pero esta es mi experiencia más relevante, para más echa un vistazo a mi CV.</span></h2>
+    <h2>Experiencia: <span class="nota">Mi carrera profesional como desarrollador web esta comenzando 🚀. Para más echa un vistazo a mi CV.</span></h2>
   </ion-list-header>
   <ion-item-group class="muestrario">
     <ion-item class="muestra ion-align-items-center">
@@ -92,14 +37,14 @@
         <p class="tags">Aptitudes: Desarrollo BackEnd, Java, SpringBoot, Angular.</p>
       </ion-label>
       <ion-thumbnail slot="end">
-        <img alt="logoMSF" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
+        <img alt="logoGetronics" src="assets/logos/getronics-SVG-logo.png"/>
       </ion-thumbnail>
     </ion-item>
 
     <ion-item class="muestra ion-align-items-center">
       <ion-label class="descripcion">
         <h2 class="titulo">Recaudador de fondos para varias ONGs: <span class="nota">2019 - 2022.</span></h2>
-        <p class="ion-text-justify">En este periodo trabajé como captador de socios para Distintas ONG, entre ellas Médicos Sin Fronteras, Cruz Roja y la Asociación Española Contra el Cancer.</p>
+        <p class="ion-text-justify">Entre ellas Médicos Sin Fronteras, Cruz Roja y la Asociación Española Contra el Cancer.</p>
         <p class="tags">Aptitudes: Trabajo por Objetivos, Proactividad, Comunicación Cara a Cara, Gestión de Presión</p>
       </ion-label>
       <ion-thumbnail slot="end">
