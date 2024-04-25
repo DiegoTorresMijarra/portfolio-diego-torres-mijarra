@@ -20,7 +20,7 @@
           <ion-card>
             <ion-card-title>
               <ion-toolbar>
-                <ion-title class="titulo">{{trabajo.titulo}}: <span class="nota">{{trabajo.nota}}</span></ion-title>
+                <ion-title class="titulo" slot="start">{{trabajo.titulo}}: <span class="nota">{{trabajo.nota}}</span></ion-title>
                 <ion-buttons slot="end">
                   <ion-button (click)="modal.dismiss()">Close</ion-button>
                 </ion-buttons>
