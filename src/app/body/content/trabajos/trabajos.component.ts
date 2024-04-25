@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AnimationController, IonicModule} from "@ionic/angular";
 import {HttpClient} from "@angular/common/http";
 import {TrabajoModel, TrabajosService} from "./trabajos.service";
-import {JsonPipe, NgForOf} from "@angular/common";
+import {JsonPipe, NgForOf, NgIf} from "@angular/common";
 import {CdkFixedSizeVirtualScroll, CdkVirtualScrollViewport} from "@angular/cdk/scrolling";
 
 @Component({
@@ -15,13 +15,14 @@ import {CdkFixedSizeVirtualScroll, CdkVirtualScrollViewport} from "@angular/cdk/
     NgForOf,
     JsonPipe,
     CdkVirtualScrollViewport,
-    CdkFixedSizeVirtualScroll
+    CdkFixedSizeVirtualScroll,
+    NgIf
   ]
 })
 export class TrabajosComponent implements OnInit {
 
   trabajos: TrabajoModel[] = []
-  private segment: string ='';
+  segment: string ='';
 
   constructor(private animationCtrl: AnimationController, private trabajoService: TrabajosService) {
   }
@@ -35,6 +36,7 @@ export class TrabajosComponent implements OnInit {
 
   segmentChanged(ev: any) {
     this.segment = ev.detail.value;
+    console.log(this.segment);
   }
 
   enterAnimation = (baseEl: HTMLElement) => {
@@ -62,6 +64,7 @@ export class TrabajosComponent implements OnInit {
   };
 
   leaveAnimation = (baseEl: HTMLElement) => {
+    this.segment = ''
     return this.enterAnimation(baseEl).direction('reverse');
   };
 }
