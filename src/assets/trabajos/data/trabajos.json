@@ -16,7 +16,8 @@
       "assets/trabajos/MacJava7.png",
       "assets/trabajos/MacJava8.PNG"
     ],
-    "url": "https://github.com/DiegoTorresMijarra/MacJavaIndex"
+    "url": "https://github.com/DiegoTorresMijarra/MacJavaIndex",
+    "code": "https://github.com/DiegoTorresMijarra/MacJavaIndex"
   },
   {
     "id": 2,
@@ -29,7 +30,8 @@
       "assets/trabajos/imagen1.PNG",
       "assets/trabajos/imagen2.PNG"
     ],
-    "url": "https://github.com/ejemplo/otro-trabajo"
+    "url": "https://github.com/ejemplo/otro-trabajo",
+    "code": "https://github.com/DiegoTorresMijarra/MacJavaIndex"
   }
 ]
 

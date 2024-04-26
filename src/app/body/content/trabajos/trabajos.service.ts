@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core'
-import { HttpClient } from '@angular/common/http'
-import { Observable } from 'rxjs'
+import {Injectable} from '@angular/core'
+import {HttpClient} from '@angular/common/http'
+import {Observable} from 'rxjs'
 
 export class TrabajoModel {
   id: number
@@ -10,7 +10,8 @@ export class TrabajoModel {
   resumen: string
   descripcion: string
   images: string[]
-  url: string
+  url: string | null | undefined
+  code: string | null | undefined
 
   constructor(
     id: number,
@@ -20,7 +21,8 @@ export class TrabajoModel {
     resumen: string,
     descripcion: string,
     images: string[],
-    url: string,
+    url: string | null | undefined,
+    code: string | null | undefined
   ) {
     this.id = id
     this.titulo = titulo
@@ -30,6 +32,7 @@ export class TrabajoModel {
     this.descripcion = descripcion
     this.images = images
     this.url = url
+    this.code = code
   }
 }
 
@@ -37,7 +40,8 @@ export class TrabajoModel {
   providedIn: 'root',
 })
 export class TrabajosService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+  }
 
   getTrabajos(): Observable<TrabajoModel[]> {
     return this.http.get<TrabajoModel[]>('assets/trabajos/data/trabajos.json')
