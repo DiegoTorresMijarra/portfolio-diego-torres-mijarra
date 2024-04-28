@@ -32,11 +32,13 @@
   }
 
   ion-col {
+    padding-top: 15px;
+  }
+
+
+  ion-col:last-child {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
   }
 
   ion-list-header {
@@ -192,6 +194,7 @@
     margin-bottom: 10px;
     min-height: 100px;
     min-width: 50px;
+    width: 100%;
   }
 
   ion-segment::-webkit-scrollbar {
@@ -206,6 +209,7 @@
   ion-segment::-webkit-scrollbar-track {
     background: #666;
   }
+
 }
 
 
@@ -223,6 +227,7 @@
     width: 80%;
     height: 80%;
   }
+
 
   .galleryHelp ion-icon {
     transform: rotate(90deg);
@@ -281,19 +286,18 @@
   overflow: hidden;
   position: relative;
   padding: 0;
+  margin: 0;
 }
 
 .gallery ion-img {
   width: 100%;
-  height: 500px;
+  /*height: 500px;*/
   object-fit: contain;
   border-radius: 5px;
 }
 
 .galleryHelp {
-  position: fixed;
-  top: auto;
-  bottom: auto;
+  align-self: center;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -314,7 +318,7 @@ ion-grid {
   height: 100%;
   object-fit: cover;
 
-  -webkit-animation: slide 1s 1;
+  /*-webkit-animation: slide 1s 1;*/
 }
 
 
