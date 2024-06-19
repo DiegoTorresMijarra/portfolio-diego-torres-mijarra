@@ -14,7 +14,7 @@
     <ion-thumbnail slot="end">
       <img alt="{{'trabajo'+trabajo.id}}" src="{{trabajo.logo}}"/>
     </ion-thumbnail>
-
+    y
     <ion-modal #modal trigger="{{'trabajo'+trabajo.id}}" [enterAnimation]="enterAnimation"
                [leaveAnimation]="leaveAnimation">
       <ng-template>
@@ -37,7 +37,7 @@
               <ion-item-group *ngIf="trabajo.url||trabajo.code" class="trabajoUrls ion-padding-top">
                 <ion-label style="display: contents;">
                   <ion-icon name="arrow-forward-outline"></ion-icon>
-                  Para más, no olvides visitar
+                  Para más, no olvides visitar:
                   <ion-icon name="arrow-forward-outline"></ion-icon>
                 </ion-label>
 
