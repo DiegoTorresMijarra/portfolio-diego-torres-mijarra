@@ -203,6 +203,7 @@
   .readMore {
     width: 100%;
     text-align: end;
+    color: var(--ion-color-link);
   }
 
   .trabajoUrls {
@@ -211,6 +212,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .trabajoUrls > ion-item {
+    color: var(--ion-color-link)
   }
 }
 

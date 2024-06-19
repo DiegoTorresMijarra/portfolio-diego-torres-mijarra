@@ -45,6 +45,6 @@ ion-img::part(image) {
 
   ion-card {
     width: 100% !important;
-    margin: 5px !important;
+    margin-top: 5px !important;
   }
 }
