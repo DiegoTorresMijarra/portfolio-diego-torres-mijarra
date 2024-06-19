@@ -21,17 +21,23 @@
   },
   {
     "id": 2,
-    "titulo": "Otro Trabajo",
-    "logo": "assets/images/trabajos/otroLogo.png",
-    "nota": "5 Estrellas",
-    "resumen": "Descripción breve del otro trabajo",
-    "descripcion": "Descripción detallada del otro trabajo",
+    "titulo": "BioJava",
+    "logo": "assets/trabajos/tfg/logoTfg.png",
+    "nota": "Bio ➡ ONLINE",
+    "resumen": "Tienda Online de productos BIO, usando Java con SpringBoot y Angular e Ionic.",
+    "descripcion": "Este proyecto conforma el TFG del Grado de Desarrollo de Aplicaciones Web. Nuestra intencion fue, generar una tienda online lo más real posible. El Back esta desarrollado en Java con SpringBoot y el Front con Angular e Ionic. El proyecto esta desplegado y te animo a que lo visites 😉 ",
     "images": [
-      "assets/trabajos/imagen1.PNG",
-      "assets/trabajos/imagen2.PNG"
+      "assets/trabajos/macjava/Tfg1.PNG",
+      "assets/trabajos/macjava/Tfg2.PNG",
+      "assets/trabajos/macjava/Tfg3.PNG",
+      "assets/trabajos/macjava/Tfg4.png",
+      "assets/trabajos/macjava/Tfg5.PNG",
+      "assets/trabajos/macjava/Tfg6.PNG",
+      "assets/trabajos/macjava/Tfg7.png",
+      "assets/trabajos/macjava/Tfg8.PNG"
     ],
     "url": null,
-    "code": "https://github.com/DiegoTorresMijarra/MacJavaIndex"
+    "code": "https://github.com/DiegoTorresMijarra/TFG-JaimeLozano-DiegoTorres/"
   }
 ]
 

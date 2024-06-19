@@ -217,6 +217,8 @@
   .trabajoUrls > ion-item {
     color: var(--ion-color-link)
   }
+
+
 }
 
 /*large*/
@@ -288,6 +290,21 @@
     width: 45%;
   }
 
+}
+
+@media (min-width: 700px) {
+  ion-segment::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ion-segment::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 20px;
+  }
+
+  ion-segment::-webkit-scrollbar-track {
+    background: #666;
+  }
 }
 
 /*mid*/
