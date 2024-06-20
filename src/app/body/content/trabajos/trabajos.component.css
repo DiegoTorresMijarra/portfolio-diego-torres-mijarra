@@ -170,6 +170,10 @@
     width: 100%;
   }
 
+  .md .titulo {
+    margin: 10px;
+  }
+
   .nota {
     font: inherit;
     font-size: calc(80%);
@@ -203,7 +207,7 @@
   .readMore {
     width: 100%;
     text-align: end;
-    color: var(--ion-color-link);
+    /*color: var(--ion-color-link);*/
   }
 
   .trabajoUrls {
@@ -215,7 +219,8 @@
   }
 
   .trabajoUrls > ion-item {
-    color: var(--ion-color-link)
+    --detail-icon-color: black;
+    --detail-icon-opacity: 0.8;
   }
 
 

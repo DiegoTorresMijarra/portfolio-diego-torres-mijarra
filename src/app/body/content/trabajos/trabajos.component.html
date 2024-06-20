@@ -8,7 +8,7 @@
       <p class="ion-text-justify">
         {{ trabajo.resumen }} <br>
       </p>
-      <p class="readMore">Seguir leyendo →</p>
+      <ion-text class="readMore" color="primary">Seguir leyendo →</ion-text>
     </ion-label>
 
     <ion-thumbnail slot="end">
@@ -22,7 +22,7 @@
             <ion-title class="titulo" slot="start">{{ trabajo.titulo }}: <span
               class="nota">{{ trabajo.nota }}</span></ion-title>
             <ion-buttons slot="end">
-              <ion-button (click)="modal.dismiss()">Close</ion-button>
+              <ion-button (click)="modal.dismiss()" color="primary">Close</ion-button>
             </ion-buttons>
           </ion-toolbar>
         </ion-header>
@@ -41,13 +41,13 @@
                 </ion-label>
 
                 <ion-item *ngIf="trabajo.url" href="{{trabajo.url}}" target="_blank" detail="true"
-                          detail-icon="arrow-redo-outline" lines="none">
+                          detail-icon="arrow-redo-outline" lines="none" color="primary">
                   <ion-label style="min-width: max-content;">
                     <h4>Pruébame en Directo:</h4>
                   </ion-label>
                 </ion-item>
                 <ion-item *ngIf="trabajo.code" href="{{trabajo.code}}" target="_blank" detail="true"
-                          detail-icon="logo-github" lines="none">
+                          detail-icon="logo-github" lines="none" color="primary">
                   <ion-label>
                     <h4>Código:</h4>
                   </ion-label>

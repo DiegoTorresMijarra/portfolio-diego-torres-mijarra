@@ -21,12 +21,13 @@
   },
   {
     "id": 2,
-    "titulo": "BioJava",
-    "logo": "assets/trabajos/tfg/logoTfg.png",
-    "nota": "Bio ➡ ONLINE",
+    "titulo": "Bio Online",
+    "logo": "assets/trabajos/tfg/logoTfg.webp",
+    "nota": "to Be-Online",
     "resumen": "Tienda Online de productos BIO, usando Java con SpringBoot y Angular e Ionic.",
     "descripcion": "Este proyecto conforma el TFG del Grado de Desarrollo de Aplicaciones Web. Nuestra intencion fue, generar una tienda online lo más real posible. El Back esta desarrollado en Java con SpringBoot y el Front con Angular e Ionic. El proyecto esta desplegado y te animo a que lo visites 😉 ",
     "images": [
+      "assets/trabajos/tfg/logoTfg.webp",
       "assets/trabajos/macjava/Tfg1.PNG",
       "assets/trabajos/macjava/Tfg2.PNG",
       "assets/trabajos/macjava/Tfg3.PNG",
