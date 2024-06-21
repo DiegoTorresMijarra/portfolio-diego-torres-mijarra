@@ -7,7 +7,7 @@
   <ion-content class="ion-padding">
     <ion-list>
       <!-- Sobre mí -->
-      <ion-item button detail="true"  href="#sobreMi" >
+      <ion-item button detail="true" href="#sobreMi">
         <ion-label>Sobre mí</ion-label>
       </ion-item>
 
@@ -40,13 +40,24 @@
       <ion-item button detail="true" href="#contacto">
         <ion-label>Contacto</ion-label>
       </ion-item>
-
     </ion-list>
   </ion-content>
-
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title slot="start">Powered By:</ion-title>
+      <ion-buttons slot="end">
+        <ion-button href="https://ionicframework.com/" shape="round">
+          <ion-icon name="logo-ionic" slot="icon-only"></ion-icon>
+        </ion-button>
+        <ion-button href="https://angular.dev/" shape="round">
+          <ion-icon name="logo-angular" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
 </ion-menu>
 
-<ion-content class="ion-page ion-padding" id="main-content">
+<ion-content class="ion-page ion-padding" id="main-content" #mainContent>
   <app-content-header></app-content-header>
   <hr style="border-top: 3px solid black" class="ion-margin-bottom">
   <app-content></app-content>

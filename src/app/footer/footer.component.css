@@ -7,3 +7,65 @@
   text-align: center;
   width: 100%;
 }
+
+ion-title {
+  width: 100%;
+  text-align: center;
+}
+
+ion-button {
+  font-size: calc(80%);
+}
+
+ion-icon {
+  transform: rotateY(180deg);
+}
+
+
+@keyframes moveUpAndRotate {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    transform: translateY(-10px) translateX(-15px);
+    scale: 1.5;
+  }
+  /*25% {*/
+  /*  transform: translateY(-50px) translateX(-15px) rotateY(0);*/
+  /*}*/
+  /*50% {*/
+  /*  transform: translateY(-100px) translateX(15px) rotateY(180deg);*/
+  /*}*/
+  /*75% {*/
+  /*  transform: translateY(-150px) translateX(-15px) rotateY(0);*/
+  /*}*/
+  90% {
+    transform: translateY(-190px) translateX(25px);
+  }
+  100% {
+    transform: translateY(-200px) translateX(10px);
+    opacity: 0;
+  }
+}
+
+#animationContainer {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+#brujaIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#brujaIcon.animate {
+  animation: moveUpAndRotate 1.5s forwards;
+}

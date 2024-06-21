@@ -1,7 +1,8 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core'
-import { IonContent, IonicModule } from '@ionic/angular'
-import { ContentHeaderComponent } from './content-header/content-header.component'
-import { ContentComponent } from './content/content.component'
+import {AfterViewInit, Component, ViewChild} from '@angular/core'
+import {IonContent, IonicModule} from '@ionic/angular'
+import {ContentHeaderComponent} from './content-header/content-header.component'
+import {ContentComponent} from './content/content.component'
+import {ScrollService} from "../services/scroll.service";
 
 @Component({
   selector: 'app-body',
@@ -16,12 +17,14 @@ import { ContentComponent } from './content/content.component'
   templateUrl: './body.component.html',
   styleUrl: './body.component.css',
 })
-export class BodyComponent {
-  //  @ViewChild(AppComponent) body: IonContent;
+export class BodyComponent implements AfterViewInit {
 
-  constructor() {}
+  @ViewChild('mainContent', {static: false}) content!: IonContent;
 
-  scrollTo() {
-    //    this.body?.scrollToTop().then(r => true);
+  constructor(private scrollService: ScrollService) {
+  }
+
+  ngAfterViewInit() {
+    this.scrollService.setContent(this.content);
   }
 }

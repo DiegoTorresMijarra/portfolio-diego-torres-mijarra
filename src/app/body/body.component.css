@@ -5,3 +5,9 @@ ion-list {
   opacity: .6;
 }
 
+ion-title {
+  font-style: italic;
+  padding: 0 0 0 10px;
+  width: 100%;
+  text-align: start;
+}
