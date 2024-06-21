@@ -21,6 +21,11 @@ ion-card {
   margin: 0;
 }
 
+ion-card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
 ion-img {
   max-height: 150px;
   max-width: 150px;
@@ -32,9 +37,16 @@ ion-img::part(image) {
   max-height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 50px rgba(0, 42, 255, 0.5);
+  box-shadow: 0 0 20px 20px rgb(57 104 175 / 74%);
 }
 
+ion-toolbar {
+  --background: var(--ion-card-background), #fff;
+}
+
+ion-title {
+  padding: 0;
+}
 
 @media (max-width: 768px) {
   ion-col {
