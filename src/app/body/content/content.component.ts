@@ -18,4 +18,6 @@ export class ContentComponent {
       string: value,
     })
   }
+
+  protected readonly screen = screen;
 }
