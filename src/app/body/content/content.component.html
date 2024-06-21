@@ -50,7 +50,7 @@
         <p class="tags">Aptitudes: Trabajo por Objetivos, Proactividad, Comunicación Cara a Cara, Gestión de Presión</p>
       </ion-label>
       <ion-thumbnail slot="end">
-        <img alt="logoCF" src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
+        <ion-img alt="logoCF" src="assets/logos/MSF_International_logo_3.png"/>
       </ion-thumbnail>
     </ion-item>
 
@@ -139,7 +139,7 @@
           Email:
         </div>
       </ion-input>
-      <ion-button id="copyButtonEmail" class="ion-padding-start" size="middle"
+      <ion-button id="copyButtonEmail" size="{{screen.width>600 ? 'middle' : 'small'}}"
                   (click)="writeToClipboard('diegotorresmijarra@gmail.com')">
 
         <ion-icon slot="icon-only" name="copy-outline"></ion-icon>
@@ -149,7 +149,7 @@
           </ng-template>
         </ion-popover>
       </ion-button>
-      <ion-button size="middle" href="mailto:diegotorresmijarra@gmail.com">
+      <ion-button size="{{screen.width>600 ? 'middle' : 'small'}}" href="mailto:diegotorresmijarra@gmail.com">
         <ion-icon slot="icon-only" name="send-outline"></ion-icon>
       </ion-button>
     </ion-item>
@@ -161,7 +161,7 @@
           GitHub:
         </div>
       </ion-input>
-      <ion-button id="copyButtonGH" class="ion-padding-start" size="middle"
+      <ion-button id="copyButtonGH" size="{{screen.width>600 ? 'middle' : 'small'}}"
                   (click)="writeToClipboard('DiegoTorresMijarra')">
 
         <ion-icon slot="icon-only" name="copy-outline"></ion-icon>
@@ -171,7 +171,8 @@
           </ng-template>
         </ion-popover>
       </ion-button>
-      <ion-button size="middle" href="https://github.com/DiegoTorresMijarra">
+      <ion-button size="{{screen.width>600 ? 'middle' : 'small'}}" href="https://github.com/DiegoTorresMijarra"
+                  target="_blank">
         <ion-icon slot="icon-only" name="arrow-redo-outline"></ion-icon>
       </ion-button>
     </ion-item>
@@ -183,7 +184,7 @@
           LinkedIn:
         </div>
       </ion-input>
-      <ion-button id="copyButtonLk" class="ion-padding-start" size="middle"
+      <ion-button id="copyButtonLk" size="{{screen.width>600 ? 'middle' : 'small'}}"
                   (click)="writeToClipboard('Diego Torres Mijarra')">
 
         <ion-icon slot="icon-only" name="copy-outline"></ion-icon>
@@ -193,7 +194,8 @@
           </ng-template>
         </ion-popover>
       </ion-button>
-      <ion-button size="middle" href="https://www.linkedin.com/in/diego-torres-mijarra/">
+      <ion-button size="{{screen.width>600 ? 'middle' : 'small'}}"
+                  href="https://www.linkedin.com/in/diego-torres-mijarra/" target="_blank">
         <ion-icon slot="icon-only" name="arrow-redo-outline"></ion-icon>
       </ion-button>
     </ion-item>

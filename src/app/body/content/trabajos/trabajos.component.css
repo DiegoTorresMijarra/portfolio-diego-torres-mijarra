@@ -2,7 +2,7 @@
 
 @media (min-width: 0px) {
   /*ion-components*/
-  *{
+  * {
     border-radius: 5px;
   }
 
@@ -14,7 +14,7 @@
     align-items: center;
   }
 
-  .muestra::part(native){
+  .muestra::part(native) {
     height: 100%;
     display: flex;
   }
@@ -32,11 +32,13 @@
   }
 
   ion-col {
+    padding-top: 15px;
+  }
+
+
+  ion-col:last-child {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
   }
 
   ion-list-header {
@@ -45,11 +47,8 @@
     border-style: solid;
     border-bottom-width: 3px;
     border-image: linear-gradient(to right,
-      /*calc(var(--ion-border-color) - var(--ion-color-step-60)) 20%, todo*/
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.5) 40%,   /* Negro transparente al 20% */
-    rgba(0, 0, 0, 0) 80%)
-    1;
+      /*calc(var(--ion-border-color) - var(--ion-color-step-60)) 20%, todo*/ rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.5) 40%, /* Negro transparente al 20% */ rgba(0, 0, 0, 0) 80%) 1;
   }
 
   ion-thumbnail {
@@ -58,20 +57,20 @@
     margin: 0;
   }
 
-  ion-modal::part(content){
+  ion-modal::part(content) {
     width: 80%;
-    height:80%;
+    height: 80%;
 
     min-width: max-content;
     min-height: max-content;
   }
 
 
-  ion-modal::part(content) ion-content{
+  ion-modal::part(content) ion-content {
     min-height: max-content;
 
     width: 80%;
-    height:80%;
+    height: 80%;
   }
 
   ion-popover::part(content) {
@@ -104,15 +103,58 @@
     --indicator-box-shadow: -5px -5px 10px 0px red, 5px 5px 10px 0px red;
   }
 
-  ion-segment-button ion-thumbnail{
+  ion-segment-button ion-thumbnail {
     height: 100%;
     width: 100%;
     border-radius: 5px;
   }
 
+
+  .galleryRow {
+    height: 80%;
+  }
+
+  .gallery {
+    list-style-type: none;
+    display: flex;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery ion-img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  .galleryHelp {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .galleryHelp ion-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  ion-grid {
+    height: 100%;
+    width: 100%;
+  }
+
+  .gallery li {
+    align-self: center;
+    height: 100%;
+    object-fit: cover;
+  }
+
   /*Clases for elements*/
-
-
   .badget {
     height: 2em;
     margin: 3px;
@@ -126,6 +168,10 @@
 
   .titulo {
     width: 100%;
+  }
+
+  .md .titulo {
+    margin: 10px;
   }
 
   .nota {
@@ -161,51 +207,22 @@
   .readMore {
     width: 100%;
     text-align: end;
+    /*color: var(--ion-color-link);*/
   }
 
-  .copied {
-    font: inherit;
-    color: var(--ion-color-step-300);
-  }
-
-  .contactItemGroup {
+  .trabajoUrls {
+    --padding-top: 10px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
   }
 
-  .contactItem {
-    --color-contact-label: rgb(50, 113, 121);
-    margin-top: var(--margin-top);
-    display: flex;
-    flex-wrap: wrap;
-    --background: var(--color-contact-label, black);
-    min-width: fit-content;
+  .trabajoUrls > ion-item {
+    --detail-icon-color: black;
+    --detail-icon-opacity: 0.8;
   }
 
-  .contactItem::part(native) {
-    padding: 0;
-  }
-
-  #gmail .contactLabel, ion-button {
-    --background: var(rgb(199,22,16));
-  }
-
-  .contactItem ion-button {
-    --background: #56C7D7FF;
-  }
-
-  .contactLabel {
-    background-color: #56C7D7FF;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  .contactLabel ion-icon {
-    font-size: calc(150%);
-  }
 
 }
 
@@ -224,8 +241,8 @@
 
     height: 500px;
 
-    overflow-y: auto ;
-    overflow-x: hidden ;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     direction: rtl;
   }
@@ -234,6 +251,7 @@
     margin-bottom: 10px;
     min-height: 100px;
     min-width: 50px;
+    width: 100%;
   }
 
   ion-segment::-webkit-scrollbar {
@@ -248,6 +266,7 @@
   ion-segment::-webkit-scrollbar-track {
     background: #666;
   }
+
 }
 
 
@@ -266,6 +285,7 @@
     height: 80%;
   }
 
+
   .galleryHelp ion-icon {
     transform: rotate(90deg);
   }
@@ -275,19 +295,21 @@
     width: 45%;
   }
 
-  .contactItem {
-    --inner-padding-end: 16px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin: 10px 0 0;
-    width: 600px;
+}
+
+@media (min-width: 700px) {
+  ion-segment::-webkit-scrollbar {
+    width: 7px;
   }
 
-  .contactLabel {
-    min-width: 140px;
+  ion-segment::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 20px;
   }
 
+  ion-segment::-webkit-scrollbar-track {
+    background: #666;
+  }
 }
 
 /*mid*/
@@ -296,6 +318,19 @@
   ion-modal::part(content) {
     width: 95%;
     height: 80%;
+  }
+
+  .trabajoUrls > ion-item {
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .trabajoUrls > ion-label > ion-icon {
+    transform: rotate(45deg);
+  }
+
+  .trabajoUrls > ion-label > ion-icon:last-child {
+    transform: rotate(135deg);
   }
 
   /*Clases for elements*/
@@ -308,79 +343,5 @@
     padding: 0;
     width: auto;
     text-align: start;
-  }
-}
-
-.galleryRow {
-  height: 80%;
-}
-
-.gallery {
-  list-style-type: none;
-  display: flex;
-  height: auto;
-  width: auto;
-  overflow: hidden;
-  position: relative;
-  padding: 0;
-}
-
-.gallery ion-img {
-  width: 100%;
-  height: 500px;
-  object-fit: contain;
-  border-radius: 5px;
-}
-
-.galleryHelp {
-  position: fixed;
-  top: auto;
-  bottom: auto;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.galleryHelp ion-icon {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-ion-grid {
-  height: 100%;
-  width: 100%;
-}
-
-.gallery li {
-  align-self: center;
-  height: 100%;
-  object-fit: cover;
-
-  -webkit-animation: slide 1s 1;
-}
-
-
-@keyframes slide {
-  0% {
-    display: inherit;
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes hidden {
-  0% {
-    z-index: 2;
-    opacity: 1;
-  }
-  99% {
-    z-index: 2;
-    opacity: 0;
-  }
-  100% {
-    z-index: 2;
-    display: none;
   }
 }

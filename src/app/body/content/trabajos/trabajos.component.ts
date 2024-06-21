@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core'
-import { AnimationController, IonicModule } from '@ionic/angular'
-import { HttpClient } from '@angular/common/http'
-import { TrabajoModel, TrabajosService } from './trabajos.service'
-import { JsonPipe, NgForOf, NgIf } from '@angular/common'
+import {Component, OnInit, ViewChild, viewChild} from '@angular/core'
+import {AnimationController, IonContent, IonicModule} from '@ionic/angular'
+import {HttpClient} from '@angular/common/http'
+import {TrabajoModel, TrabajosService} from './trabajos.service'
+import {JsonPipe, NgForOf, NgIf} from '@angular/common'
 import {
   CdkFixedSizeVirtualScroll,
   CdkVirtualScrollViewport,
 } from '@angular/cdk/scrolling'
+import {document} from "ionicons/icons";
 
 @Component({
   selector: 'app-trabajos',
@@ -23,13 +24,17 @@ import {
   ],
 })
 export class TrabajosComponent implements OnInit {
+  @ViewChild('modalContent', {static: false}) modalContent!: IonContent;
+
   trabajos: TrabajoModel[] = []
   segment: string = ''
 
   constructor(
     private animationCtrl: AnimationController,
     private trabajoService: TrabajosService,
-  ) {}
+  ) {
+  }
+
   ngOnInit() {
     this.trabajoService.getTrabajos().subscribe((trabajos: TrabajoModel[]) => {
       this.trabajos = trabajos
@@ -38,7 +43,13 @@ export class TrabajosComponent implements OnInit {
 
   segmentChanged(ev: any) {
     this.segment = ev.detail.value
-    console.log(this.segment)
+    this.scrollToBottom();
+  }
+
+  async scrollToBottom() {
+    if (this.modalContent) {
+      this.modalContent.scrollToBottom(1000);
+    }
   }
 
   enterAnimation = (baseEl: HTMLElement) => {
@@ -53,8 +64,8 @@ export class TrabajosComponent implements OnInit {
       .create()
       .addElement(root?.querySelector('.modal-wrapper')!)
       .keyframes([
-        { offset: 0, opacity: '0', transform: 'scale(0)' },
-        { offset: 1, opacity: '0.99', transform: 'scale(1)' },
+        {offset: 0, opacity: '0', transform: 'scale(0)'},
+        {offset: 1, opacity: '0.99', transform: 'scale(1)'},
       ])
 
     return this.animationCtrl
