@@ -21,9 +21,22 @@ ion-card {
   margin: 0;
 }
 
+ion-card-header {
+  padding: calc(var(--padding-top)) 0 calc(var(--padding-bottom) * 0.5) calc(var(--padding-start));
+  border: 0 solid;
+  border-bottom-width: 3px;
+  border-image: linear-gradient(to right,
+    /*calc(var(--ion-border-color) - var(--ion-color-step-60)) 20%, todo*/ rgba(0, 0, 0, 1) 0%,
+  rgba(0, 0, 0, 0.5) 40%, /* Negro transparente al 20% */ rgba(0, 0, 0, 0) 80%) 1;
+}
+
 ion-card-title {
   display: flex;
   justify-content: space-between;
+}
+
+ion-card-content {
+  padding-top: var(--padding-top);
 }
 
 ion-img {
