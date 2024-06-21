@@ -28,14 +28,8 @@
     "descripcion": "Este proyecto conforma el TFG del Grado de Desarrollo de Aplicaciones Web. Nuestra intencion fue, generar una tienda online lo más real posible. El Back esta desarrollado en Java con SpringBoot y el Front con Angular e Ionic. El proyecto esta desplegado y te animo a que lo visites 😉 ",
     "images": [
       "assets/trabajos/tfg/logoTfg.webp",
-      "assets/trabajos/macjava/Tfg1.PNG",
-      "assets/trabajos/macjava/Tfg2.PNG",
-      "assets/trabajos/macjava/Tfg3.PNG",
-      "assets/trabajos/macjava/Tfg4.png",
-      "assets/trabajos/macjava/Tfg5.PNG",
-      "assets/trabajos/macjava/Tfg6.PNG",
-      "assets/trabajos/macjava/Tfg7.png",
-      "assets/trabajos/macjava/Tfg8.PNG"
+      "assets/trabajos/tfg/Tfg1.png",
+      "assets/trabajos/tfg/Tfg2.png"
     ],
     "url": null,
     "code": "https://github.com/DiegoTorresMijarra/TFG-JaimeLozano-DiegoTorres/"
