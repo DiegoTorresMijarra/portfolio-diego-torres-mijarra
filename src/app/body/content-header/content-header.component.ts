@@ -28,7 +28,7 @@ export class ContentHeaderComponent implements OnInit {
   downloadWeb(fileUrl: string) {
     const link = document.createElement('a');
     link.href = fileUrl;
-    link.download = 'mi-cv.pdf';
+    link.download = 'CV_DiegoTorres2024.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();
