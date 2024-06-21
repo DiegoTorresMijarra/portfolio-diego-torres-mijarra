@@ -39,4 +39,8 @@ export class FooterComponent implements OnInit {
       });
     }
   }
+
+  scrollToSection(sectionId: string) {
+    this.scrollService.scrollToSection(sectionId);
+  }
 }

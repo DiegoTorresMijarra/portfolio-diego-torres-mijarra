@@ -7,37 +7,37 @@
   <ion-content class="ion-padding">
     <ion-list>
       <!-- Sobre mí -->
-      <ion-item button detail="true" href="#sobreMi">
+      <ion-item button detail="true" (click)="scrollToSection('sobreMi')">
         <ion-label>Sobre mí</ion-label>
       </ion-item>
 
       <!-- Tecnologías -->
-      <ion-item button detail="true" href="#tecnologias">
+      <ion-item button detail="true" (click)="scrollToSection('tecnologias')">
         <ion-label>Tecnologías</ion-label>
       </ion-item>
 
       <!-- Proyectos -->
-      <ion-item button detail="true" href="#proyectos">
+      <ion-item button detail="true" (click)="scrollToSection('proyectos')">
         <ion-label>Proyectos</ion-label>
       </ion-item>
 
       <!-- Experiencia -->
-      <ion-item button detail="true" href="#experiencia">
+      <ion-item button detail="true" (click)="scrollToSection('experiencia')">
         <ion-label>Experiencia</ion-label>
       </ion-item>
 
       <!-- Formación -->
-      <ion-item button detail="true" href="#formacion">
+      <ion-item button detail="true" (click)="scrollToSection('formacion')">
         <ion-label>Formación</ion-label>
       </ion-item>
 
       <!-- Más sobre mí -->
-      <ion-item button detail="true" href="#masSobreMi" style="display: none">
+      <ion-item button detail="true" (click)="scrollToSection('masSobreMi')" style="display: none">
         <ion-label>Más sobre mí</ion-label>
       </ion-item>
 
       <!-- Contacto -->
-      <ion-item button detail="true" href="#contacto">
+      <ion-item button detail="true" (click)="scrollToSection('contacto')">
         <ion-label>Contacto</ion-label>
       </ion-item>
     </ion-list>

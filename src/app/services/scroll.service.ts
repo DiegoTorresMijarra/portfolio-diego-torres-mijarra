@@ -20,4 +20,13 @@ export class ScrollService {
       this.content.scrollToTop(1500);
     }
   }
+
+  scrollToSection(sectionId: string) {
+    if (this.content) {
+      const yOffset = document.getElementById(sectionId)?.offsetTop;
+      if (yOffset !== undefined) {
+        this.content.scrollToPoint(0, yOffset, 1000);
+      }
+    }
+  }
 }

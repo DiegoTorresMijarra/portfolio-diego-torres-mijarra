@@ -27,4 +27,8 @@ export class BodyComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.scrollService.setContent(this.content);
   }
+
+  scrollToSection(sectionId: string) {
+    this.scrollService.scrollToSection(sectionId);
+  }
 }
