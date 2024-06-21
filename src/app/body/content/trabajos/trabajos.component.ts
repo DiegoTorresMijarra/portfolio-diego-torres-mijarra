@@ -47,7 +47,6 @@ export class TrabajosComponent implements OnInit {
   }
 
   async scrollToBottom() {
-    console.log(this.modalContent)
     if (this.modalContent) {
       this.modalContent.scrollToBottom(1000);
     }
