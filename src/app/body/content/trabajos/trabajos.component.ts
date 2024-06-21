@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core'
-import {AnimationController, IonicModule} from '@ionic/angular'
+import {Component, OnInit, ViewChild, viewChild} from '@angular/core'
+import {AnimationController, IonContent, IonicModule} from '@ionic/angular'
 import {HttpClient} from '@angular/common/http'
 import {TrabajoModel, TrabajosService} from './trabajos.service'
 import {JsonPipe, NgForOf, NgIf} from '@angular/common'
@@ -7,6 +7,7 @@ import {
   CdkFixedSizeVirtualScroll,
   CdkVirtualScrollViewport,
 } from '@angular/cdk/scrolling'
+import {document} from "ionicons/icons";
 
 @Component({
   selector: 'app-trabajos',
@@ -23,6 +24,8 @@ import {
   ],
 })
 export class TrabajosComponent implements OnInit {
+  @ViewChild('modalContent', {static: false}) modalContent!: IonContent;
+
   trabajos: TrabajoModel[] = []
   segment: string = ''
 
@@ -40,6 +43,14 @@ export class TrabajosComponent implements OnInit {
 
   segmentChanged(ev: any) {
     this.segment = ev.detail.value
+    this.scrollToBottom();
+  }
+
+  async scrollToBottom() {
+    console.log(this.modalContent)
+    if (this.modalContent) {
+      this.modalContent.scrollToBottom(1000);
+    }
   }
 
   enterAnimation = (baseEl: HTMLElement) => {

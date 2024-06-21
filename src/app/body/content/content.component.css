@@ -166,6 +166,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
   }
 
   .contactLabel ion-icon {
@@ -216,6 +217,12 @@
   }
 
   /*Clases for elements*/
+  .contactItemGroup {
+    width: 80%;
+    position: sticky;
+    margin: auto;
+  }
+
   .muestra {
     width: 100%;
     margin: 10px auto auto;

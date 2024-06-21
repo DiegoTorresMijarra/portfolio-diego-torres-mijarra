@@ -22,11 +22,11 @@
             <ion-title class="titulo" slot="start">{{ trabajo.titulo }}: <span
               class="nota">{{ trabajo.nota }}</span></ion-title>
             <ion-buttons slot="end">
-              <ion-button (click)="modal.dismiss()" color="primary">Close</ion-button>
+              <ion-button (click)="modal.dismiss()" color="primary" fill="outline">Close</ion-button>
             </ion-buttons>
           </ion-toolbar>
         </ion-header>
-        <ion-content>
+        <ion-content #modalContent>
           <ion-grid>
             <ion-row class="ion-padding-horizontal ion-text-justify ion-padding-top">
               {{ trabajo.descripcion }}
