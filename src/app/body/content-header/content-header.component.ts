@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core'
-import {IonicModule, Platform} from '@ionic/angular'
+import { Component, OnInit } from '@angular/core'
+import { IonicModule, Platform } from '@ionic/angular'
 
 @Component({
   selector: 'app-content-header',
@@ -9,8 +9,7 @@ import {IonicModule, Platform} from '@ionic/angular'
   imports: [IonicModule],
 })
 export class ContentHeaderComponent implements OnInit {
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   //
   // constructor(private platform: Platform) {

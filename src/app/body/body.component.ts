@@ -1,8 +1,8 @@
-import {AfterViewInit, Component, ViewChild} from '@angular/core'
-import {IonContent, IonicModule} from '@ionic/angular'
-import {ContentHeaderComponent} from './content-header/content-header.component'
-import {ContentComponent} from './content/content.component'
-import {ScrollService} from "../services/scroll.service";
+import { AfterViewInit, Component, ViewChild } from '@angular/core'
+import { IonContent, IonicModule } from '@ionic/angular'
+import { ContentHeaderComponent } from './content-header/content-header.component'
+import { ContentComponent } from './content/content.component'
+import { ScrollService } from '../services/scroll.service'
 
 @Component({
   selector: 'app-body',
@@ -18,17 +18,15 @@ import {ScrollService} from "../services/scroll.service";
   styleUrl: './body.component.css',
 })
 export class BodyComponent implements AfterViewInit {
+  @ViewChild('mainContent', { static: false }) content!: IonContent
 
-  @ViewChild('mainContent', {static: false}) content!: IonContent;
-
-  constructor(private scrollService: ScrollService) {
-  }
+  constructor(private scrollService: ScrollService) {}
 
   ngAfterViewInit() {
-    this.scrollService.setContent(this.content);
+    this.scrollService.setContent(this.content)
   }
 
   scrollToSection(sectionId: string) {
-    this.scrollService.scrollToSection(sectionId);
+    this.scrollService.scrollToSection(sectionId)
   }
 }

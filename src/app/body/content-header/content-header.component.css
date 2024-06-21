@@ -23,7 +23,7 @@ ion-card {
 }
 
 ion-card-header {
-  padding: calc(var(--padding-top)) 0 calc(var(--padding-bottom) * 0.5) calc(var(--padding-start));
+  padding: calc(var(--padding-top)) calc(var(--padding-end)) calc(var(--padding-bottom) * 0.5) calc(var(--padding-start));
   border: 0 solid;
   border-bottom-width: 3px;
   border-image: linear-gradient(to right,

@@ -1,7 +1,7 @@
-import {booleanAttribute, Component, Input, OnInit} from '@angular/core'
-import {IonicModule} from '@ionic/angular'
-import {FormsModule} from '@angular/forms'
-import {NgIf} from '@angular/common'
+import { booleanAttribute, Component, Input, OnInit } from '@angular/core'
+import { IonicModule } from '@ionic/angular'
+import { FormsModule } from '@angular/forms'
+import { NgIf } from '@angular/common'
 
 @Component({
   selector: 'app-header',
@@ -27,8 +27,7 @@ export class HeaderComponent implements OnInit {
   }
 
   protected initMode(): void {
-    if (this.darkMode)
-      this.setMode()
+    if (this.darkMode) this.setMode()
   }
 
   protected toggleDarkMode(): void {
