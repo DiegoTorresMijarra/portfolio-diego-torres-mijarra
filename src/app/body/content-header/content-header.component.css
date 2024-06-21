@@ -1,0 +1,76 @@
+ion-grid {
+  padding: 0;
+  width: 100%;
+}
+
+ion-col {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-col:first-child {
+  overflow: hidden;
+  background-image: url("https://raw.githubusercontent.com/DiegoTorresMijarra/DiegoTorresMijarra/master/images/banner2.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+ion-card {
+  margin: 0;
+}
+
+ion-card-header {
+  padding: calc(var(--padding-top)) calc(var(--padding-end)) calc(var(--padding-bottom) * 0.5) calc(var(--padding-start));
+  border: 0 solid;
+  border-bottom-width: 3px;
+  border-image: linear-gradient(to right,
+    /*calc(var(--ion-border-color) - var(--ion-color-step-60)) 20%, todo*/ rgba(0, 0, 0, 1) 0%,
+  rgba(0, 0, 0, 0.5) 40%, /* Negro transparente al 20% */ rgba(0, 0, 0, 0) 80%) 1;
+}
+
+ion-card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+ion-card-content {
+  padding-top: var(--padding-top);
+}
+
+ion-img {
+  max-height: 150px;
+  max-width: 150px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+ion-img::part(image) {
+  max-height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px 20px rgb(57 104 175 / 74%);
+}
+
+ion-toolbar {
+  --background: var(--ion-card-background), #fff;
+}
+
+ion-title {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  ion-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ion-card {
+    width: 100% !important;
+    margin-top: 5px !important;
+  }
+}

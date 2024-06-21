@@ -1,0 +1,13 @@
+ion-list {
+  padding: 0;
+
+  background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+  opacity: .6;
+}
+
+ion-title {
+  font-style: italic;
+  padding: 0 0 0 10px;
+  width: 100%;
+  text-align: start;
+}
