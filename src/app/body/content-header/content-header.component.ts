@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core'
-import { IonicModule, Platform } from '@ionic/angular'
+import {Component, OnInit} from '@angular/core'
+import {IonicModule, Platform} from '@ionic/angular'
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-content-header',
   standalone: true,
   templateUrl: './content-header.component.html',
   styleUrls: ['./content-header.component.css'],
-  imports: [IonicModule],
+  imports: [IonicModule, NgOptimizedImage],
 })
 export class ContentHeaderComponent implements OnInit {
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   //
   // constructor(private platform: Platform) {

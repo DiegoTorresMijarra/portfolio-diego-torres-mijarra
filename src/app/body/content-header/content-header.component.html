@@ -1,10 +1,10 @@
 <ion-grid>
   <ion-row class="ion-justify-content-center">
-    <ion-col size-xs="12" size-md="4" class="ion-align-items-center">
-      <ion-img alt="FotoPersonal"
+    <ion-col class="cabecera ion-align-items-center" size-xs="12" size-md="4" size="4">
+      <ion-img id="FotoPersonal" alt="FotoPersonal"
                src="assets/media/FotoCircular.jpeg"/>
     </ion-col>
-    <ion-col size-xs="12" size-md="8">
+    <ion-col class="cabecera" size-xs="12" size-md="8" size="8">
       <ion-card id="sobreMi">
         <ion-card-header>
           <ion-card-title class="ion-align-items-center">
@@ -18,15 +18,30 @@
             </ion-buttons>
           </ion-card-title>
         </ion-card-header>
-        <ion-card-content class="ion-text-justify ion-padding-top">
-          👋 Holaaa, mi nombre es <strong>Diego Torres Mijarra</strong> <br>
+        <ion-card-content class="ion-text-center ion-padding-top">
 
-          Soy alumno del grado de Desarrollo de Aplicaciones Web en el IES Luis Vives.
-
-          Estoy dando mis primeros pasos en el mundo de la programación y tengo muchas ganas de aprender. A si que no
-          tengas ningun problema en comentarme si hay algun error o problema 😉.
-          <br>
-          Espero que te guste lo que encuentres 😊
+          <ion-grid>
+            <ion-row>
+              <ion-col size-xs="12" size-md="4">
+                <ion-title class=""><strong>Diego Torres Mijarra</strong></ion-title>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size-xs="12" size-md="4">
+                <strong>
+                  💼 Desarrollador Web FullStack <br>
+                  📌 Madrid, 25 años <br>
+                  <span style="color: #018d01">#</span> OpenToWork
+                </strong>
+              </ion-col>
+              <ion-col size-xs="12" size-md="8" size="4">
+                <ion-text>
+                  Este es mi portfolio personal, espero que le guste lo que encuentre. Para cualquier cosa, no dude en
+                  contactar conmigo.
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
         </ion-card-content>
       </ion-card>
     </ion-col>

@@ -5,7 +5,7 @@
     "logo": "assets/trabajos/macjava/logoMacJava.png",
     "nota": "3 API Rest",
     "resumen": "Desarrollo de 3 API Rest independientes usando distintos frameworks",
-    "descripcion": "Este proyecto abarca el desarrollo de una API Rest para la gestión de un restaurante. Está desarrollado en 3 lenguajes de programación y frameworks distintos: Spring Boot y Java, Nest y TypeScript y por último en Laravel y PHP.",
+    "descripcion": "Este proyecto abarca el desarrollo de varias API Rest para la gestión de un restaurante Online y Físico. Está desarrollado en 3 lenguajes de programación y frameworks distintos: Spring Boot y Java, Nest y TypeScript y por último en Laravel y PHP. Con el objetivo de aprender y reforzar el aprendizaje sobre estas tecnologías. Te recomiendo que visites el directorio principal.",
     "images": [
       "assets/trabajos/macjava/MacJava1.PNG",
       "assets/trabajos/macjava/MacJava2.PNG",
@@ -16,7 +16,7 @@
       "assets/trabajos/macjava/MacJava7.png",
       "assets/trabajos/macjava/MacJava8.PNG"
     ],
-    "url": "https://github.com/DiegoTorresMijarra/MacJavaIndex",
+    "url": null,
     "code": "https://github.com/DiegoTorresMijarra/MacJavaIndex"
   },
   {
@@ -25,13 +25,19 @@
     "logo": "assets/trabajos/tfg/logoTfg.webp",
     "nota": "to Be-Online",
     "resumen": "Tienda Online de productos BIO, usando Java con SpringBoot y Angular e Ionic.",
-    "descripcion": "Este proyecto conforma el TFG del Grado de Desarrollo de Aplicaciones Web. Nuestra intencion fue, generar una tienda online lo más real posible. El Back esta desarrollado en Java con SpringBoot y el Front con Angular e Ionic. El proyecto esta desplegado y te animo a que lo visites 😉 ",
+    "descripcion": "Este proyecto conforma el TFG del Grado de Desarrollo de Aplicaciones Web. Nuestra intencion fue, generar una tienda online lo más real posible. El Back esta desarrollado en Java con SpringBoot y el Front con Angular e Ionic. El proyecto esta desplegado y te animo a que lo visites 😉. (El servidor es gratuito y tarda un poco en arrancar, estamos trabajando en ello) ",
     "images": [
-      "assets/trabajos/tfg/logoTfg.webp",
-      "assets/trabajos/tfg/Tfg1.png",
-      "assets/trabajos/tfg/Tfg2.png"
+      "assets/trabajos/tfg/Tfg1.PNG",
+      "assets/trabajos/tfg/Tfg2.PNG",
+      "assets/trabajos/tfg/Tfg3.PNG",
+      "assets/trabajos/tfg/Tfg4.PNG",
+      "assets/trabajos/tfg/Tfg5.PNG",
+      "assets/trabajos/tfg/Tfg6.PNG",
+      "assets/trabajos/tfg/Tfg7.PNG",
+      "assets/trabajos/tfg/Tfg8.PNG",
+      "assets/trabajos/tfg/Tfg9.PNG"
     ],
-    "url": null,
+    "url": "https://bio-online.netlify.app/",
     "code": "https://github.com/DiegoTorresMijarra/TFG-JaimeLozano-DiegoTorres/"
   }
 ]

@@ -3,14 +3,14 @@ ion-grid {
   width: 100%;
 }
 
-ion-col {
+.cabecera {
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-ion-col:first-child {
+.cabecera:first-child {
   overflow: hidden;
   background-image: url("https://raw.githubusercontent.com/DiegoTorresMijarra/DiegoTorresMijarra/master/images/banner2.jpeg");
   background-size: cover;
@@ -40,14 +40,14 @@ ion-card-content {
   padding-top: var(--padding-top);
 }
 
-ion-img {
+#FotoPersonal {
   max-height: 150px;
   max-width: 150px;
   border-radius: 50%;
   align-self: center;
 }
 
-ion-img::part(image) {
+#FotoPersonal::part(image) {
   max-height: 150px;
   border-radius: 50%;
   overflow: hidden;
@@ -63,7 +63,7 @@ ion-title {
 }
 
 @media (max-width: 768px) {
-  ion-col {
+  .cabecera {
     display: flex;
     justify-content: center;
     align-items: center;
