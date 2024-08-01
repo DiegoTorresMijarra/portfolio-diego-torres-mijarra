@@ -7,6 +7,10 @@ Pero no dudes en preguntarme si necesitas saber algo más.
 
 La aplicacion esta desplegada en https://diegotorres-portfolio.netlify.app/
 
+#### App Estatus:
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f16fdb2-3591-445f-be5f-f3c4ebf3113d/deploy-status)](https://app.netlify.com/sites/diegotorres-portfolio/deploys)
+
 ## Desarrollo:
 
 La aplicacion usa Ionic como framework principal ayudandose de la estructura de Angular.
