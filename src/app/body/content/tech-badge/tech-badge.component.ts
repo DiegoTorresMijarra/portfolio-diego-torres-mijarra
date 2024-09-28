@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import {Component} from '@angular/core'
 import {
   siSpringboot,
   siPhp,
@@ -12,10 +12,10 @@ import {
   siMysql,
   siPostgresql,
   siMongodb,
-  siIonic,
+  siIonic, siReact, siNextdotjs,
 } from 'simple-icons'
-import { IonicModule } from '@ionic/angular'
-import { NgForOf } from '@angular/common'
+import {IonicModule} from '@ionic/angular'
+import {NgForOf} from '@angular/common'
 
 @Component({
   selector: 'app-tech-badge',
@@ -26,26 +26,29 @@ import { NgForOf } from '@angular/common'
 })
 export class TechBadgeComponent {
   iconsBack = [
-    { name: 'Spring Boot', icon: siSpringboot },
-    { name: 'PHP', icon: siPhp },
-    { name: 'Laravel', icon: siLaravel },
-    { name: 'TypeScript', icon: siTypescript },
-    { name: 'NestJS', icon: siNestjs },
+    {name: 'Spring Boot', icon: siSpringboot},
+    {name: 'PHP', icon: siPhp},
+    {name: 'Laravel', icon: siLaravel},
+    {name: 'TypeScript', icon: siTypescript},
+    {name: 'NestJS', icon: siNestjs},
   ]
   iconsFront = [
-    { name: 'HTML5', icon: siHtml5 },
-    { name: 'CSS3', icon: siCss3 },
+    {name: 'React', icon: siReact},
+    {name: 'Next.js', icon: siNextdotjs},
+    {name: 'Ionic', icon: siIonic},
+    // {name: 'HTML5', icon: siHtml5},
+    // {name: 'CSS3', icon: siCss3},
     // {name: 'Bootstrap', icon: siBootstrap},
-    { name: 'Angular', icon: siAngular },
-    { name: 'Ionic', icon: siIonic },
+    {name: 'Angular', icon: siAngular},
   ]
   iconsDB = [
-    { name: 'MySQL', icon: siMysql },
-    { name: 'PostgreSQL', icon: siPostgresql },
-    { name: 'MongoDB', icon: siMongodb },
+    {name: 'MySQL', icon: siMysql},
+    {name: 'PostgreSQL', icon: siPostgresql},
+    {name: 'MongoDB', icon: siMongodb},
   ]
 
-  constructor() {}
+  constructor() {
+  }
 
   protected readonly Object = Object
 }
