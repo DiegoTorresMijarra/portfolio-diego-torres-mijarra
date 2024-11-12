@@ -1,4 +1,4 @@
-import {booleanAttribute, Component, Input, OnInit} from '@angular/core';
+import {AfterViewInit, booleanAttribute, Component, Input, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-theme-switch',
@@ -6,12 +6,13 @@ import {booleanAttribute, Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./theme-switch.component.scss'],
   standalone: true
 })
-export class ThemeSwitchComponent implements OnInit {
+export class ThemeSwitchComponent implements OnInit, AfterViewInit {
   darkMode: boolean | undefined
+  @ViewChild('switch') switchElement: any;
 
   ngOnInit(): void {
     let mode = localStorage.getItem('darkMode')
-
+    
     if (mode === 'false' || mode === 'true') {
       this.darkMode = booleanAttribute(mode)
     } else {
@@ -20,6 +21,11 @@ export class ThemeSwitchComponent implements OnInit {
 
     this.initMode()
   }
+
+  ngAfterViewInit(): void {
+    this.switchElement.nativeElement.checked = this.darkMode
+  }
+
 
   protected initMode(): void {
     if (this.darkMode) this.setMode()
