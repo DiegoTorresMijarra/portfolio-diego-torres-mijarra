@@ -11,6 +11,10 @@
 ion-title {
   width: 100%;
   text-align: center;
+  margin: initial !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 ion-toolbar {
@@ -20,6 +24,18 @@ ion-toolbar {
 
 ion-button::part(native) {
   padding: 0 !important;
+}
+
+.icon-col {
+  display: flex !important;
+  flex-direction: column-reverse;
+}
+
+ion-img::part(image) {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 8px rgb(3 19 100);
 }
 
 .md ion-icon {
