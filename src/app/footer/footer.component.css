@@ -49,6 +49,12 @@ ion-img::part(image) {
   pointer-events: none;
 }
 
+#brujaButtons {
+  border-radius: 50%;
+  background-image: url('../../assets/icon/crescent-moon.svg');
+  background-size: cover;
+}
+
 #brujaIcon {
   position: relative;
   width: 48px;
