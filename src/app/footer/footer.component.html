@@ -16,14 +16,17 @@
     </ion-row>
   </ion-grid>
 
-  <ion-buttons id="brujaButtons" slot="end">
+  <ion-buttons id="brujaButtons"
+               [ngClass]="{'sun': !darkMode()}"
+               slot="end">
     <ion-button id="brujaButton" color="primary">
-      <ion-icon src="assets/icon/escoba.svg" slot="icon-only" size="large"></ion-icon>
+      <ion-icon [src]="darkMode() ? 'assets/icon/escoba.svg' : 'assets/icon/pluma.svg' " slot="icon-only"
+                size="large"></ion-icon>
     </ion-button>
   </ion-buttons>
 
 </ion-toolbar>
 
 <div id="animationContainer">
-  <ion-icon id="brujaIcon" src="assets/icon/bruja.svg"></ion-icon>
+  <ion-icon id="brujaIcon" [src]="darkMode() ? 'assets/icon/bruja.svg' : 'assets/icon/fenix.svg'"></ion-icon>
 </div>

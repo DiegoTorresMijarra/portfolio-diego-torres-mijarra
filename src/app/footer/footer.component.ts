@@ -1,16 +1,19 @@
-import { Component, OnInit } from '@angular/core'
-import { IonicModule } from '@ionic/angular'
-import { ScrollService } from '../services/scroll.service'
+import {Component, OnInit} from '@angular/core'
+import {IonicModule} from '@ionic/angular'
+import {ScrollService} from '../services/scroll.service'
+import {darkMode} from "../header/theme-switch/theme-switch.component";
+import {NgClass} from "@angular/common";
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [IonicModule],
+  imports: [IonicModule, NgClass],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css',
 })
 export class FooterComponent implements OnInit {
-  constructor(private scrollService: ScrollService) {}
+  constructor(private scrollService: ScrollService) {
+  }
 
   ngOnInit() {
     const brujaButton = document.getElementById('brujaButton')
@@ -41,4 +44,6 @@ export class FooterComponent implements OnInit {
   scrollToSection(sectionId: string) {
     this.scrollService.scrollToSection(sectionId)
   }
+
+  protected readonly darkMode = darkMode;
 }
