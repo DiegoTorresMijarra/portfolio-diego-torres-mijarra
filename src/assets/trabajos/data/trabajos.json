@@ -25,7 +25,7 @@
     "logo": "assets/trabajos/tfg/logoTfg.webp",
     "nota": "to Be-Online",
     "resumen": "Tienda Online de productos BIO, usando Java con SpringBoot y Angular e Ionic.",
-    "descripcion": "Este proyecto conforma el TFG del Grado de Desarrollo de Aplicaciones Web. Nuestra intencion fue, generar una tienda online lo más real posible. El Back esta desarrollado en Java con SpringBoot y el Front con Angular e Ionic. El proyecto esta desplegado y te animo a que lo visites 😉. (El servidor es gratuito y tarda un poco en arrancar, estamos trabajando en ello) ",
+    "descripcion": "Este proyecto conforma el TFG del Grado de Desarrollo de Aplicaciones Web. Nuestra intencion fue, generar una tienda online lo más real posible. El Back esta desarrollado en Java con SpringBoot y el Front con Angular e Ionic.",
     "images": [
       "assets/trabajos/tfg/Tfg1.PNG",
       "assets/trabajos/tfg/Tfg2.PNG",
@@ -37,8 +37,9 @@
       "assets/trabajos/tfg/Tfg8.PNG",
       "assets/trabajos/tfg/Tfg9.PNG"
     ],
-    "url": "https://bio-online.netlify.app/",
-    "code": "https://github.com/DiegoTorresMijarra/TFG-JaimeLozano-DiegoTorres/"
+    "url": null,
+    "code": "https://github.com/DiegoTorresMijarra/TFG-JaimeLozano-DiegoTorres/",
+    "old": "El proyecto esta desplegado y te animo a que lo visites 😉. (El servidor es gratuito y tarda un poco en arrancar, estamos trabajando en ello)"
   }
 ]
 
